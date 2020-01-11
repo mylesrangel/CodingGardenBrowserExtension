@@ -1,0 +1,24 @@
+{
+  "name": "codinggardenbrowserextension",
+  "version": "1.0.0",
+  "description": "Get notified when coding garden goes live!",
+  "main": "app.js",
+  "dependencies": {
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mylesrangel/CodingGardenBrowserExtension.git"
+  },
+  "author": "mylesrangel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mylesrangel/CodingGardenBrowserExtension/issues"
+  },
+  "homepage": "https://github.com/mylesrangel/CodingGardenBrowserExtension#readme"
+}
