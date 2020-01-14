@@ -1,7 +1,7 @@
+
 console.log("I am in the javscript!")
 
 let intervalTime = 6000; // 6 seconds
-let browserIconImage = document.getElementById('browserLogo');
 
 
 //? this works
@@ -14,16 +14,13 @@ let isCjLive = setInterval(() => {
     }).then(res => res.json())
       .then(data => {
             console.log(data);
+
+            //TODO: The setIcon gets called and set everytime, let's not do that
             if(data){
-                browserIconImage.src = 'images/codingGardenLive_16.png';
-                chrome.browserAction.setIcon({path:{
-                    "16": "codingGardenLive_16.png",
-                    "38": "codingGardenLive_38.png"
-                }
-                });
+                chrome.browserAction.setIcon({path: "/images/codingGardenLive_38.png"});
             }else if(!data){
                 console.log("I didn't find Data!");
-                broswerIconImage.src = 'images/codingGarden_19.png';
+                chrome.browserAction.setIcon({path: "/images/codingGarden_128.png"});
             }
         });
 },intervalTime);
