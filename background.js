@@ -15,15 +15,16 @@ let isCjLive = setInterval(() => {
     })  .then(res => res.json())
         .then(data => {
             console.log(data);
-            console.log("Data length" , data.data.length);
             //TODO: The setIcon gets called and set everytime, let's not do that
-            if(data.data.length){
+            if(data.data.length && areWeLive === false){
+                console.log("Set to live!")
+                areWeLive = true;
                 chrome.browserAction.setIcon({path: "/images/codingGardenLive_38.png"});
-            }else if(!data.data.length){
-                console.log("I didn't find Data!");
+            }else if(!data.data.length && areWeLive == true){
+                console.log("Not Live");
+                areWeLive = false;
                 chrome.browserAction.setIcon({path: "/images/codingGarden_128.png"});
             }
         })
         .catch((error) => console.log(error));
-
 },intervalTime);
