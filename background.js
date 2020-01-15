@@ -20,7 +20,7 @@ let isCjLive = setInterval(() => {
                 console.log("Set to live!")
                 areWeLive = true;
                 chrome.browserAction.setIcon({path: "/images/codingGardenLive_38.png"});
-            }else if(!data.data.length && areWeLive == true){
+            }else if(!data.data.length && areWeLive === true){
                 console.log("Not Live");
                 areWeLive = false;
                 chrome.browserAction.setIcon({path: "/images/codingGarden_128.png"});
