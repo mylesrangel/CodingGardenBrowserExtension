@@ -1,0 +1,17 @@
+
+body{
+    background-color: #333;
+    color: white;
+}
+div.optionsTitle{
+    text-align: center;
+    font-size: large;
+    padding-bottom: 1em;
+}
+div.optionsContainer{
+    color: lime;
+    padding-bottom: 1em;
+}
+button#save{
+    margin-left: 44%;
+}

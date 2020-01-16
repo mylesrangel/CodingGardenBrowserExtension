@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "Coding Garden Extesion",
+    "name": "Coding Garden",
     "description": "Find everything related to Coding Garden in a browser extension",
     "version": "1.0.0",
     "icons": {"128": "images/codingGarden_128.png"},
@@ -12,7 +12,9 @@
         "scripts": ["background.js"],
         "persistent": false
     },
-    "options_page" : "options.html",
-    
+    "options_ui" : {
+        "page": "options.html"
+    },
+
     "permissions": ["activeTab"]
 }
