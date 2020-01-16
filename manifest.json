@@ -6,11 +6,13 @@
     "icons": {"128": "images/codingGarden_128.png"},
     "browser_action": {
         "default_icon": "images/codingGarden_19.png",
-        "default_popup": "index.html"
+        "default_popup": "popup.html"
     },
     "background": {
         "scripts": ["background.js"],
         "persistent": false
     },
+    "options_page" : "options.html",
+    
     "permissions": ["activeTab"]
 }

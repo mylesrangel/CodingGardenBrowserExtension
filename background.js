@@ -15,7 +15,6 @@ let isCjLive = setInterval(() => {
     })  .then(res => res.json())
         .then(data => {
             console.log(data);
-            //TODO: The setIcon gets called and set everytime, let's not do that
             if(data.data.length && areWeLive === false){
                 console.log("Set to live!")
                 areWeLive = true;
