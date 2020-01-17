@@ -8,7 +8,7 @@ let areWeLive = false;
 //? this works
 let isCjLive = setInterval(() => {
     console.log('Its been a minute!');
-    fetch("https://api.twitch.tv/helix/streams?user_login=summit1g", {
+    fetch("https://api.twitch.tv/helix/streams?user_login=chocoTaco", {
     headers: {
         "Client-Id": "2zzcft851djzosj8xybtdo5ds0wc05"
     }
