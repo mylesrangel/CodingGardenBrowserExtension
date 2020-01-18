@@ -5,19 +5,20 @@
     <link rel="stylesheet" href="/options.css" >
   </head>
 
-    </body>
-        <div class="optionsTitle"> Coding Garden Options</div>
-        <div class="optionsContainer" >
-            <span> How often do you want to check if the stream is live? </span>
-            <select id="timeIntervals">
-                <option class ="option" value="1"> 1 Minute </option>
-                <option class ="option" value="5"> 5 Minutes </option>
-                <option class ="option" value="15"> 15 Minutes </option>
-                <option class ="option" value="30"> 30 Minutes </option>
-                <option class ="option" value="60"> 1 Hour </option>
-            </select>
-        </div>
-        <button id="save" > Save </button>
-        <script src="options.js" />
-    </body>
+  <body>
+      <div class="optionsTitle"> Coding Garden Options</div>
+      <div class="optionsContainer" >
+          <span class="options"> Check if Coding Garden is live every: </span>
+          <select id="timeIntervals">
+              <option value="1"> 1 Minute </option>
+              <option value="5"> 5 Minutes </option>
+              <option value="10"> 10 Minutes </option>
+              <option value="30"> 30 Minutes </option>
+              <option value="60"> 1 Hour </option>
+          </select>
+      </div>
+      <div id="status"> </div>
+      <button id="save" > Save </button>
+      <script src="options.js" > </script>
+  </body>
 </html>

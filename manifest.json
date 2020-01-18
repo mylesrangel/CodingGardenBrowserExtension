@@ -10,11 +10,11 @@
     },
     "background": {
         "scripts": ["background.js"],
-        "persistent": true
+        "persistent": false
     },
     "options_ui" : {
         "page": "options.html"
     },
 
-    "permissions": ["activeTab"]
+    "permissions": ["storage", "alarms"]
 }
