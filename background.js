@@ -2,19 +2,21 @@
 console.log("I am in the javscript!")
 
 //TODO: Need to set this to options valuee
-let intervalTime = 6000; // 6 seconds
 let areWeLive = false;
+
+chrome.storage.sync.get(["interval"], (data)=>{
+    chrome.alarms.create("isCjLive", {periodInMinutes: parseInt(data.interval)});
+});
+
+
 
 
 ///NOTE: periodInMinutes is equal to setInterval && delayInMinutes is equal to setTimeout
 ///NOTE: when extension is loaded 'unpacked' there is no limit to how often the periodInMinutes can be otherwise 1 min is the limit
-chrome.alarms.create("isCjLive", {periodInMinutes: 1});
-
-
 chrome.alarms.onAlarm.addListener((alarm) =>{
     console.log("its been 1 Minute!", alarm);
 
-    fetch("https://api.twitch.tv/helix/streams?user_login=chocoTaco", {
+    fetch("https://api.twitch.tv/helix/streams?user_login=summit1g", {
     headers: {
         "Client-Id": "2zzcft851djzosj8xybtdo5ds0wc05"
     }
@@ -38,7 +40,7 @@ chrome.alarms.onAlarm.addListener((alarm) =>{
 // //? this works
 // let isCjLive = setInterval(() => {
 //     console.log('Its been a minute!');
-//     fetch("https://api.twitch.tv/helix/streams?user_login=chocoTaco", {
+//     fetch("https://api.twitch.tv/helix/streams?user_login=codingGarden", {
 //     headers: {
 //         "Client-Id": "2zzcft851djzosj8xybtdo5ds0wc05"
 //     }
