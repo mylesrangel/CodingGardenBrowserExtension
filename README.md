@@ -9,5 +9,13 @@ Clone or download this repo -> open chrome browser -> chrome options(top right) 
 
 # Screenshots
 
+Extension in the toolbar
 ![Coding Garden Browser Extension](https://github.com/mylesrangel/CodingGardenBrowserExtension/blob/master/images/Screenshot%201.JPG)
 
+
+When Coding Garden is live
+![alt text](https://github.com/mylesrangel/CodingGardenBrowserExtension/blob/master/images/screenshot2.JPG)
+
+
+Options for extension
+![alt text](https://github.com/mylesrangel/CodingGardenBrowserExtension/blob/master/images/Screenshot%20options.JPG)
