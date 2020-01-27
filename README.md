@@ -9,4 +9,5 @@ Clone or download this repo -> open chrome browser -> chrome options(top right) 
 
 # Screenshots
 
+![Coding Garden Browser Extension](/images/screenshot1.png)
 
